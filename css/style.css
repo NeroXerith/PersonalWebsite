@@ -1,0 +1,292 @@
+body {
+	background-image: url('../assets/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	overflow: hidden;
+	}
+
+/** Menu signage**/
+#about {
+	position: absolute;
+	top: 95px;
+	right: 35px;
+	z-index: -1;
+	
+}
+#contact {
+	position: absolute;
+	top: 175px;
+	right: 33px;
+	z-index: -1;
+	
+}
+#resume {
+	position: absolute;
+	top: 255px;
+	right: 34px;
+	z-index: -1;
+	
+}
+#gallery {
+	position: absolute;
+	top: 255px;
+	left: 34px;
+	z-index: -1;
+	
+}
+
+
+/** Objects **/
+#torch-green {
+	position: absolute;
+	top: 81.5px;
+	left: 127.6px;
+	z-index: 1;
+	
+}
+#torch-green2 {
+	position: absolute;
+	top: 81px;
+	left: 207px;
+	z-index: 1;
+	
+}
+#torch-green3 {
+	position: absolute;
+	top: 158.5px;
+	right: 197.7px;
+	z-index: 1;
+	
+}
+#torch-green4 {
+	position: absolute;
+	top: 158.5px;
+	right: 275px;
+	z-index: 1;
+	
+}
+
+/** Teleporter Portals **/
+#teleporter {
+	position: absolute;
+	top: 128px;
+	right: -37px;
+	z-index: -1;
+	
+}
+#teleporter2 {
+	position: absolute;
+	top: 290px;
+	right: -42px;
+	z-index: -1;
+}
+#teleporter3 {
+	position: absolute;
+	top: 450px;
+	right: -43px;
+	z-index: -1;
+	
+}
+#teleporter4 {
+	position: absolute;
+	top: 460px;
+	left: -36px;
+	z-index: -1;
+	
+}
+
+/** MODAL **/
+
+#author {
+
+    background-image: url('../assets/bryle.jpg');
+    width: 390px;
+    height: 390px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    border: solid 2px #ffff;
+    background-color: #eed;
+    box-shadow:  0 0 10px 3px rgba(255,255,255,255.3);
+    -moz-box-shadow: 0 0 10px  3px rgba(255,255,255,255.3);
+    -webkit-box-shadow: 0 0 10px 3px rgba(255,255,255,255.3);
+    -o-box-shadow: 0 0 10px 3px rgba(255,255,255,255.3);
+    position: absolute;
+    top: -8%;
+	left: -15%;
+}
+
+ .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+   
+  .popup .content {
+    position:absolute;
+    top:53%;
+    left:55%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:350px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  }
+  .popup .content #authorName {
+	  
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	font-size: 85px;
+	position: absolute;
+	right: 9%;
+	top: 6%;
+  }
+  .popup .content h2,h3 {
+	  
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	right: 42%;
+	top: 4%;
+  }
+    .popup .content hr {
+	height: 2px;
+	background-color: white;
+	width: 430px;
+	position: absolute;
+	right: 53px;
+	top: 51%;
+  }
+    .popup .content #subtitle {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	right: 85px;
+	top: 48%;
+  } 
+  
+   
+   .popup .next-btn {
+	background: url("../assets/next.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+   .popup .done-btn {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+  
+  
+  .popup .content2 {
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:350px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content2 {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }  
+  .popup .content2 #greetings-title {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	right: 32%;
+	top: 4%;
+  } 
+  .popup .content2 #greetings-paragraph {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+  }  
+   .popup .content2 #movement-demo {
+	position: absolute;
+	top: 115px;
+	right: 170px;
+  }
+   .popup .content2 #arrowkeys-title {
+	font-family: 'Bitter', serif;
+	color: white;
+	position: absolute;
+	top: 40px;
+	right: 90px;
+  }
+  .popup .content2 #avatar-demo {
+	position: absolute;
+	top: 20px;
+	left: 50px;
+  }
+   .popup .content2 #avatar-title {
+	font-family: 'Bitter', serif;
+	color: white;
+	position: absolute;
+	top: 255px;
+	left: 80px;
+  }
+ 	/** Loading **/
+.loader>div{
+    height: 100px;
+    width: 100px;
+    border: 15px solid #45474b;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}

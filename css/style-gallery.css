@@ -1,0 +1,278 @@
+body {
+	background-image: url('../assets/gallery/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 700px;
+	width: 1370px;
+}
+
+/** OBJECTS **/
+#title-gallery {
+	position: absolute;
+	top: -10px;
+	left: 600px;
+	z-index: -1;
+}
+
+#home-portal {
+	position: absolute;
+	top:480px;
+	right: -20px;
+	z-index: -1;
+	
+}
+#resume {
+	position: absolute;
+	top: 300px;
+	left: 255px;
+	z-index: -1;
+	
+}
+
+/** Modal **/
+ .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+
+   .popup .done-btn {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:15px;
+    width:125px;
+    height:45px;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+   .popup .content {
+    position:absolute;
+    top:115%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-image :url("../assets/resume/resume-info.png");
+	background-size: cover;
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:100%;
+    max-width:1000px;
+    height:1380px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+	float: center;
+	width: 15%;
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	position: relative;
+	top: 40px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+.column2 img {
+	position: relative;
+	top: -506px;
+	margin-top: 20px;
+	left: 150px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+
+.column2 img:hover {
+	opacity: 1;
+}
+
+.column3 img {
+	position: relative;
+	top: -1041px;
+	margin-top: 20px;
+	left: 300px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+	
+}
+.column3 img:hover {
+	opacity: 1;
+}
+/* Right */
+.column4 img {
+	position: relative;
+	top: -506px;
+	margin-top: 20px;
+	left: -150px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+
+.column4 img:hover {
+	opacity: 1;
+}
+
+.column4 img {
+	position: relative;
+	top: -1637px;
+	margin-top: 20px;
+	left: 920px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+	
+}
+
+.column5 img {
+	position: relative;
+	top: -1506px;
+	margin-top: 20px;
+	left: 1150px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+
+.column5 img:hover {
+	opacity: 1;
+}
+
+.column5 img {
+	position: relative;
+	top: -2135px;
+	margin-top: 20px;
+	left: 1080px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+	
+}
+
+.column6 img {
+	position: relative;
+	top: -506px;
+	margin-top: 20px;
+	right: 150px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+
+.column6 img:hover {
+	opacity: 1;
+}
+
+.column6 img {
+	position: relative;
+	top: -2655px;
+	margin-top: 20px;
+	left: 1230px;
+	opacity: 0.8; 
+	cursor: pointer; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+	
+}
+
+.column6 img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container */
+.container {
+	position: absolute;
+	display: none;
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+	
+}
+
+.container , #expandingImg {
+	top: 150px;
+	left: 490px;
+	
+}
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+	position: absolute;
+	top: -17px;
+	left: 190px;
+	color: white;
+	font-size: 27px;
+	cursor: pointer;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 50%;
+}
+
+/* Video */
+#video1 {
+	position: absolute;
+	top: 230px;
+	left: 460px;
+	opacity: 0.8; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+#video1:hover {
+	opacity: 1; 
+}
+#video2 {
+	position: absolute;
+	top: 230px;
+	left: 610px;
+	opacity: 0.8; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+#video2:hover {
+	opacity: 1; 
+}
+#video3 {
+	position: absolute;
+	top: 230px;
+	left: 760px;
+	opacity: 0.8; 
+	box-shadow: 6px -5px 10px -3px red, -6px 5px 10px -3px blue;
+}
+#video3:hover {
+	opacity: 1; 
+}

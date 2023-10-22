@@ -1,0 +1,256 @@
+body {
+	background-image: url('../assets/contact/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/** OBJECTS **/
+#direct {
+	position: absolute;
+	top: 331.5px;
+	left: 305.7px;
+	z-index: -1;
+}
+#grass1 {
+	position: absolute;
+	top: 331.5px;
+	left: 425.7px;
+	z-index: -2;
+}
+#love {
+	position: absolute;
+	top: 170.5px;
+	left: 425.7px;
+	z-index: -3;
+}
+#grass2 {
+	position: absolute;
+	top: 176.5px;
+	right: 210.7px;
+	z-index: -2;
+}
+#like {
+	position: absolute;
+	top: 170.5px;
+	right: 210.7px;
+	z-index: -3;
+}
+
+
+#home-portal {
+	position: absolute;
+	top: 435px;
+	left: -28px;
+	z-index: -1;
+	
+}
+
+/** Modal **/
+ .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+    .popup .next-btn {
+	background: url("../assets/next.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+    .popup .done-btnProvince {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:490px;
+    width:125px;
+    height:45px;
+  }
+   .popup .done-btn {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+   .popup .content {
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:350px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+    .popup .content #title {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 60px;
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+  } 
+  .popup .content #paragraph {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -35px;
+	margin: 0;
+	padding: 0;
+
+  }  
+  
+   .popup .content #facebook-title {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -35px;
+	left: -1px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #facebook-img {
+	position: relative;
+	top: -47px;
+	left: -3px;
+	margin: 0;
+	padding: 0;
+
+  } 
+   .popup .content #instagram-title {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -220px;
+	right: 190px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #instagram-img {
+	position: relative;
+	top: -230px;
+	right: 190px;
+	margin: 0;
+	padding: 0;
+
+  } 
+   .popup .content #email-title {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -400px;
+	right: -180px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #email-img {
+	position: relative;
+	top: -405px;
+	right: -180px;
+	margin: 0;
+	padding: 0;
+
+  } 
+  
+
+ 
+
+   .popup .content-province {
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:550px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content-province {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+    .popup .content-province #title {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 60px;
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+  }
+    .popup .content-province hr {
+	height: 2px;
+	background-color: white;
+	width: 680px;
+	position: absolute;
+	top: 110px;
+	left: 52px;
+  }  
+  .popup .content-province #subtitle {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -26px;
+
+  } 

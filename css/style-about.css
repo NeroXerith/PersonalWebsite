@@ -1,0 +1,398 @@
+body {
+	background-image: url('../assets/about/bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/** OBJECTS **/
+#sun {
+	position: absolute;
+	top: 15.5px;
+	left: 140.7px;
+}
+#fountain {
+	position: absolute;
+	top: 380.5px;
+	left: 625.7px;
+	
+}
+#tree {
+	position: absolute;
+	top: 240.5px;
+	left: -40.7px;
+	z-index: -3;
+	
+}
+#tree3 {
+	position: absolute;
+	top: 235.5px;
+	right: -30.7px;
+	z-index: -1;
+}
+#grass2 {
+	position: absolute;
+	top: 412.5px;
+	left: -5.7px;
+	z-index: -2;
+	
+}
+
+#rock1 {
+	position: absolute;
+	top: 455.5px;
+	left: 35.7px;
+	z-index: -1;
+}
+#bigrock {
+	position: absolute;
+	top: 175.5px;
+	left: 430.7px;
+	z-index: -6;
+}
+#bigrock2 {
+	position: absolute;
+	top: 380.5px;
+	right: -20.7px;
+	z-index: -1;
+}
+
+/** BUILDINGS **/
+#elementary {
+	position: absolute;
+	top: 187.5px;
+	left: 245.7px;
+	z-index: -5;
+}
+#hospital {
+	position: absolute;
+	top: 235.5px;
+	right: 95.7px;
+	z-index: -2;
+}
+#highschool {
+	position: absolute;
+	top: 130.5px;
+	right: 275.7px;
+	z-index: -2;
+}
+#house {
+	position: absolute;
+	top: 275.5px;
+	left: 130.7px;
+	z-index: -4;
+}
+
+
+#home-portal {
+	position: absolute;
+	top: 475px;
+	left: -28px;
+	z-index: -1;
+	
+}
+
+/** Modal **/
+ .popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+  }
+    .popup .next-btn {
+	background: url("../assets/next.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+    .popup .done-btnProvince {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:490px;
+    width:125px;
+    height:45px;
+  }
+   .popup .done-btn {
+	background: url("../assets/done.png") no-repeat transparent;
+	border: none;
+    cursor:pointer;
+    position:absolute;
+    right:30px;
+    top:295px;
+    width:125px;
+    height:45px;
+  }
+   
+  .popup.active .overlay {
+    display:block;
+  }
+   
+   .popup .content {
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:350px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+    .popup .content #title {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 60px;
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+  } 
+  .popup .content #paragraph {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -35px;
+	margin: 0;
+	padding: 0;
+
+  }  
+  
+   .popup .content #father {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -35px;
+	left: 130px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #father-img {
+	position: relative;
+	top: -35px;
+	left: 130px;
+	margin: 0;
+	padding: 0;
+
+  } 
+  
+     .popup .content #father-img:hover {
+	height: 550px;
+	width: 550px;
+	position: absolute; 
+	top: -150px;
+	left: 130px;
+	z-index: 1;
+  }
+   .popup .content #mother {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -220px;
+	right: 130px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #mother-img {
+	position: relative;
+	top: -220px;
+	right: 130px;
+	margin: 0;
+	padding: 0;
+
+  } 
+
+     .popup .content #mother-img:hover {
+	height: 550px;
+	width: 550px;
+	position: absolute; 
+	top: -150px;
+	left: 130px;
+	z-index: 1;
+  }
+  
+    .popup .content #sister {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: 120px;
+	left: 80px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #sister-img {
+	position: absolute;
+	top: 150px;
+	left: 66px;
+	margin: 0;
+	padding: 0;
+
+  } 
+      .popup .content #sister-img:hover {
+	height: 550px;
+	width: 550px;
+	position: absolute; 
+	top: -150px;
+	left: 130px;
+	z-index: 1;
+  }
+    .popup .content #brother {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: 120px;
+	left: 300px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #brother-img {
+	position: absolute;
+	top: 150px;
+	left: 280px;
+	margin: 0;
+	padding: 0;
+
+  } 
+  
+     .popup .content #brother-img:hover {
+	height: 550px;
+	width: 550px;
+	position: absolute; 
+	top: -150px;
+	left: 130px;
+	z-index: 1;
+  } 
+  
+
+    .popup .content #sister2 {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: 120px;
+	left: 500px;
+	margin: 0;
+	padding: 0;
+
+  } 
+     .popup .content #sister2-img {
+	position: absolute;
+	top: 150px;
+	left: 484px;
+	margin: 0;
+	padding: 0;
+
+  } 
+    .popup .content #sister2-img:hover {
+	height: 550px;
+	width: 550px;
+	position: absolute; 
+	top: -150px;
+	left: 130px;
+	z-index: 1;
+  } 
+  
+  
+
+ 
+
+   .popup .content-province {
+    position:absolute;
+    top:53%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background-color :rgba(50,50,50, 0.70);
+	box-shadow: 6px -5px 10px -3px white, -6px 5px 10px -3px white;
+    width:95%;
+    max-width:800px;
+    height:550px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+	border-radius: 2%;
+    font-family:"Open Sans",sans-serif;
+  } 
+  .popup.active .content-province {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+  }
+    .popup .content-province #title {
+	font-family: 'Bitter', serif;
+	color: white;
+	font-size: 60px;
+	position: relative;
+	text-align: center;
+	margin-top: 20px;
+  }
+    .popup .content-province hr {
+	height: 2px;
+	background-color: white;
+	width: 680px;
+	position: absolute;
+	top: 110px;
+	left: 52px;
+  }  
+  .popup .content-province #subtitle {
+	font-family: 'Prompt', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: relative;
+	text-align: justify;
+	text-justify: distribute;
+	text-align-last: center;
+	top: -26px;
+
+  } 
+  #map {
+	position:relative;
+	left: -2px;
+	top: -40px;
+  }
