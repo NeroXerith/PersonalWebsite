@@ -1,0 +1,281 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Brlye Sanico - Web Developer.Game Developer.Computer Science Student</title>
+			<link rel="icon" type="image/png" href="assets/favicon.png"/>
+			<link href="css/style-about.css" rel="stylesheet" type="text/css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+			<script src="js/avatar-script2.js"></script>
+		</head>
+
+		<body onkeydown="getKeyAndMove(event)" >
+					
+					<!---Popup function --->
+					<script>
+					function togglePopupHome(){
+						document.getElementById("popup-home").classList.toggle("active");
+					}
+					function togglePopupHome2(){
+						document.getElementById("popup-home2").classList.toggle("active");
+					}
+					function togglePopupElementary(){
+						document.getElementById("popup-elementary").classList.toggle("active");
+					}
+					function togglePopupHighschool(){
+						document.getElementById("popup-highschool").classList.toggle("active");
+					}
+					function togglePopupHospital(){
+						document.getElementById("popup-hospital").classList.toggle("active");
+					}
+					function togglePopupHos(){
+						document.getElementById("popup-hos").classList.toggle("active");
+					}
+					function togglePopupSiblings(){
+						document.getElementById("popup-siblings").classList.toggle("active");
+					}
+					</script>
+					
+					<!---Key Limits--->
+						<script>$('html, body').keydown(function(event){
+							if(event.keyCode !== 37 || event.keyCode !== 38 || event.keyCode !== 39 || event.keyCode !== 40)
+									{
+										event.preventDefault();
+									}
+							});
+						</script>
+					
+					
+					
+				<!--------Avatar------------>
+				<img id="avatar"  src="assets/male.png" alt="Avatar" />
+				
+				<!--------Sun------------>
+				<img id="sun"  src="assets/about/sun.png" height="200" width="200"  alt="Sun" />
+				
+				<!--------Objects------------>
+				<img id="fountain"  src="assets/about/fountain.png" height="150" width="150" alt="fountain" />
+				<img id="tree"  src="assets/about/tree1.png" height="240" width="250" alt="Tree" />
+				<img id="grass2"  src="assets/about/grass2.png" height="70" width="140" alt="Grass" />
+				<img id="rock1"  src="assets/about/rock1.png" height="30" width="45" alt="Stone" />
+				<img id="bigrock"  src="assets/about/bigrock.png" height="230" width="200" alt="Rock" />
+				<img id="tree3"  src="assets/about/tree3.png" height="240" width="250" alt="Tree" />
+				<img id="bigrock2"  src="assets/about/bigrock2.png" height="100" width="115" alt="Stone" />
+				
+				<!--------Buildings------------>
+				<img id="elementary"  src="assets/about/elementary.png" height="200" width="230" alt="Elementary building" />
+				<img id="highschool"  src="assets/about/highschool.png" height="200" width="230" alt="Highschool building" />
+				<img id="hospital"  src="assets/about/hospital.png" height="220" width="200" alt="Hospital" />
+				<img id="house"  src="assets/about/house.png" height="170" width="170" alt="Home" />
+				
+				<!--------Home Teleporter------------>
+				<div id="teleporter">
+					<img id="home-portal"  src="assets/portal-flip.gif" height="180" width="150" alt="Teleporter" />
+				</div>
+
+					
+				<!------------- Popup Home modal-------------->
+
+				<div class="popup" id="popup-home">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">My Home & Basic Info!</h1>	
+						<p id="paragraph">Hello! My name is Bryle Sanico, and I'm 18 years old. Presently, I am residing at University Town, Catarman Northern Samar with my parents and siblings. I am currently a freshmen student taking Bachelor Of Science in Computer Science at Adamson University. I Aspire someday to be come the one of the best Game Developer and raise our Philippine flag.</p>
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupHome()">
+							<a id="nextButton" class="next-btn" onclick="togglePopupHome2()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton").onclick = function () 
+								{
+								document.getElementById("popup-home2").classList.toggle("active");
+								};
+						</script>
+					</div>
+				</div>
+				<!------------- Popup Home2 modal-------------->
+
+				<div class="popup" id="popup-home2">
+					<div class="overlay"></div>
+					
+					<div class="content-province">
+						<h1 id="title">Northern Samar Province!</h1>
+						<hr>						
+						<p id="subtitle">Municipality of Catarman</p>
+						<img id="map" src="assets/about/map.png" height="360" width="380"/>
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupHome2()">
+							<a id="nextButton2" class="done-btnProvince" onclick="togglePopupHome2()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton2").onclick = function () 
+								{
+								document.getElementById("togglePopupHome2()").classList.toggle("active");
+								};
+						</script>
+					</div>
+				</div>
+				
+				<!------------- Popup Elementary modal-------------->
+
+				<div class="popup" id="popup-elementary">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">Primary Education!</h1>						
+						<p id="paragraph">I graduated my primary education at the University of Eastern Philippines Laboratory Elementary School, Catarman N. Samar at the year of 2015, I was 11 years old back then. <br> <img src="assets/about/uep.png" height="130" width="130" /></p>
+						
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupElementary()">
+							<a id="nextButton3" class="done-btn" onclick="togglePopupElementary()" ></a>
+						</div>
+						<script type="text/javascript">
+								document.getElementById("nextButton3").onclick = function () 
+								{
+								document.getElementById("togglePopupElementary()").classList.toggle("active");
+								};
+						</script>
+							
+					</div>
+				</div>
+				
+				<!------------- Popup Highschool modal-------------->
+
+				<div class="popup" id="popup-highschool">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">Secondary Education!</h1>						
+						<p id="paragraph">You might think that I'm very loyal to this University because unfortunately, I also finished my Secondary and Senior high school education at the same University! <br> <img src="assets/about/uep.png" height="130" width="130" /></p>
+						
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupHighschool()">
+							<a id="nextButton4" class="done-btn" onclick="togglePopupHighschool()" ></a>
+						</div>
+						<script type="text/javascript">
+								document.getElementById("nextButton4").onclick = function () 
+								{
+								document.getElementById("togglePopupHighschool()").classList.toggle("active");
+								};
+						</script>
+							
+					</div>
+				</div>
+				
+				<!------------- Popup Hospital modal-------------->
+
+				<div class="popup" id="popup-hospital">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">Personal Data!</h1>						
+						<p id="paragraph">First Name: Biene Bryle</p>
+						<p id="paragraph">Middle Name: Turbanada</p>
+						<p id="paragraph">Surname: Sanico</p>
+						<p id="paragraph">Age: 18</p>
+						<p id="paragraph">Birthdate: April 7, 2003</p>
+						<p id="paragraph">Birthplace: Catarman N. Samar</p>
+						
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupHospital()">
+							<a id="nextButton5" class="next-btn" onclick="togglePopupHos()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton5").onclick = function () 
+								{
+								document.getElementById("popup-hos").classList.toggle("active");
+								};
+						</script>
+							
+					</div>
+				</div>
+				
+				<!------------- Popup Hospital2 modal-------------->
+
+				<div class="popup" id="popup-hos">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">Parents!</h1>			
+						<p id="father">Ruben H. Sanico</p>
+						<img id="father-img" src="assets/about/father.jpg" height="150" width="150" />
+						<p id="mother">Narses T. Sanico</p>	
+						<img id="mother-img" src="assets/about/mother.jpg" height="150" width="150" />						
+									
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupHos()">
+							<a id="nextButton6" class="next-btn" onclick="togglePopupSiblings()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton6").onclick = function () 
+								{
+								document.getElementById("popup-siblings").classList.toggle("active");
+								};
+						</script>
+							
+					</div>
+				</div>
+				
+									<!------------- Popup Siblings modal-------------->
+
+				<div class="popup" id="popup-siblings">
+					<div class="overlay"></div>
+					
+					<div class="content">
+						<h1 id="title">Siblings!</h1>									
+						
+						<p id="sister">Bianca Sanico</p>
+						<img id="sister-img" src="assets/about/bianca.jpg" height="150" width="150" />
+					
+						<p id="brother">Benz Sanico</p>	
+						<img id="brother-img" src="assets/about/benz.jpg" height="150" width="150" />						
+						
+						<p id="sister2">Thea Sanico</p>
+						<img id="sister2-img" src="assets/about/thea.jpg" height="150" width="150" />
+					
+						<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupSiblings()">
+							<a id="nextButton7" class="done-btn" onclick="togglePopupSiblings()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton7").onclick = function () 
+								{
+								document.getElementById("togglePopupSiblings()").classList.toggle("active");
+								};
+						</script>
+							
+					</div>
+				</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		</body>
+	</html>

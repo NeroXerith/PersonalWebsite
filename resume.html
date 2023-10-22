@@ -1,0 +1,85 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Brlye Sanico - Web Developer.Game Developer.Computer Science Student</title>
+			<link rel="icon" type="image/png" href="assets/favicon.png"/>
+			<link href="css/style-resume.css" rel="stylesheet" type="text/css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+			<script src="js/avatar-script4.js"></script>
+		</head>
+
+		<body onkeydown="getKeyAndMove(event)" >
+				
+				
+				<!---Popup function --->
+					<script>
+					function togglePopupResume(){
+						document.getElementById("popup-resume").classList.toggle("active");
+					}
+					
+					</script>
+					
+				<!---Key Limits--->
+						<script>$('html, body').keydown(function(event){
+							if(event.keyCode !== 37 || event.keyCode !== 38 || event.keyCode !== 39 || event.keyCode !== 40)
+									{
+										event.preventDefault();
+									}
+							});
+						</script>	
+					
+				<!--------Avatar------------>
+				<img id="avatar"  src="assets/male.png" alt="Avatar" />
+				
+			
+				<!--------Objects------------>
+				<img id="resume"  src="assets/resume/resume.png" height="170" width="180" alt="Direct" />
+
+				<!--------Home Teleporter------------>
+				<div id="teleporter">
+					<img id="home-portal"  src="assets/portal.gif" height="175" width="140" alt="Teleporter" />
+				</div>
+
+					
+				<!------------- Popup Home modal-------------->
+
+				<div class="popup" id="popup-resume">
+					<div class="overlay"></div>
+					
+					<div class="content">
+											
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupResume()">
+							<a id="nextButton" class="done-btn" onclick="togglePopupResume()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton").onclick = function () 
+								{
+								document.getElementById("togglePopupResume()").classList.toggle("active");
+								};
+						</script>
+					</div>
+				</div>
+				
+			
+				
+			
+				
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		</body>
+	</html>

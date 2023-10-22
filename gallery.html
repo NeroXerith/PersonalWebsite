@@ -1,0 +1,205 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Brlye Sanico - Web Developer.Game Developer.Computer Science Student</title>
+			<link rel="icon" type="image/png" href="assets/favicon.png"/>
+			<link href="css/style-gallery.css" rel="stylesheet" type="text/css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+			<script src="js/avatar-script5.js"></script>
+		</head>
+
+		<body onkeydown="getKeyAndMove(event)" >
+				
+				<!---Popup function --->
+					<script>
+					function togglePopupResume(){
+						document.getElementById("popup-resume").classList.toggle("active");
+					}
+					
+					</script>
+					
+				<!---Key Limits--->
+						<script>$('html, body').keydown(function(event){
+							if(event.keyCode !== 37 || event.keyCode !== 38 || event.keyCode !== 39 || event.keyCode !== 40)
+									{
+										event.preventDefault();
+									}
+							});
+						</script>
+						
+				
+				<!--------Avatar------------>
+				<img id="avatar"  src="assets/male.png" alt="Avatar" />
+				
+			
+				<!--------Objects------------>
+				<img id="title-gallery"  src="assets/gallery/title.png" height="170" width="180" alt="Title" />
+
+				<!--------Home Teleporter------------>
+				<div id="teleporter">
+					<img id="home-portal"  src="assets/portal.gif" height="175" width="140" alt="Teleporter" />
+				</div>
+				<!------- Video-------------------->
+				<video id="video1" controls="" autoplay="" name="media" height="200x" width="120px" >
+				<source  src="assets/gallery/videos/1.mp4" type="video/mp4">
+				</video>
+				<video id="video2" controls="" autoplay="" name="media" height="200x" width="120px">
+				<source src="assets/gallery/videos/2.mp4" type="video/mp4">
+				</video>
+				<video id="video3" controls="" autoplay="" name="media" height="200x" width="120px">
+				<source src="assets/gallery/videos/3.mp4" type="video/mp4">
+				</video>
+				
+				
+				<!--------Image Gallery------------>
+				<div class="row">
+					<div class="column">
+						<img src="assets/gallery/images/1.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="assets/gallery/images/3.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="assets/gallery/images/12.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column">
+						<img src="assets/gallery/images/4.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+					
+					<div class="column2">
+						<img src="assets/gallery/images/5.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+					<div class="column2">
+						<img src="assets/gallery/images/20.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+					<div class="column2">
+						<img src="assets/gallery/images/7.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column2">
+						<img src="assets/gallery/images/8.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					
+					<div class="column3">
+						<img src="assets/gallery/images/9.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column3">
+						<img src="assets/gallery/images/11.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column3">
+						<img src="assets/gallery/images/28.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column3">
+						<img src="assets/gallery/images/13.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					
+					<!-------- Center ------>
+					<div class="column-center">
+						<img src="assets/gallery/images/13.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<!-------- RIGHT ------>
+					<div class="column4">
+						<img src="assets/gallery/images/16.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column4">
+						<img src="assets/gallery/images/19.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column4">
+						<img src="assets/gallery/images/18.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column4">
+						<img src="assets/gallery/images/17.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column5">
+						<img src="assets/gallery/images/22.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column5">
+						<img src="assets/gallery/images/21.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+					
+					<div class="column5">
+						<img src="assets/gallery/images/23.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column5">
+						<img src="assets/gallery/images/25.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					
+					<div class="column6">
+						<img src="assets/gallery/images/26.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column6">
+						<img src="assets/gallery/images/27.jpg" style="height:100px; width:110px" onclick="myFunction(this);">
+					</div>
+					<div class="column6">
+						<img src="assets/gallery/images/24.jpg" style="height:120px; width:90px" onclick="myFunction(this);">
+					</div>
+				</div>
+				
+				<div class="container">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					<img id="expandedImg">
+					<div id="imgtext"></div>
+				</div>	
+				<!------------- Popup Home modal-------------->
+
+				<div class="popup" id="popup-resume">
+					<div class="overlay"></div>
+					
+					<div class="content">
+											
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopupResume()">
+							<a id="nextButton" class="done-btn" onclick="togglePopupResume()" ></a>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton").onclick = function () 
+								{
+								document.getElementById("togglePopupResume()").classList.toggle("active");
+								};
+						</script>
+					</div>
+				</div>
+				
+				
+				
+			<!-----Expand Image onClick------>	
+			<script>
+				function myFunction(imgs) {
+				var expandImg = document.getElementById("expandedImg");
+				var imgText = document.getElementById("imgtext");
+				expandImg.src = imgs.src;
+				imgText.innerHTML = imgs.alt;
+				expandImg.parentElement.style.display = "block";
+				}
+			</script>	
+			
+			<!-----Enter Video in Picture mode onClick------>
+			<script>
+				video1.addEventListener('click', async function() {
+				video1.disabled = true;
+				await video1.requestPictureInPicture();
+				video1.disabled = false;
+				});
+				
+				video2.addEventListener('click', async function() {
+				video2.disabled = true;
+				await video2.requestPictureInPicture();
+				video2.disabled = false;
+				});
+				
+				video3.addEventListener('click', async function() {
+				video3.disabled = true;
+				await video3.requestPictureInPicture();
+				video3.disabled = false;
+				});
+				  
+			</script>
+					
+		</body>
+	</html>

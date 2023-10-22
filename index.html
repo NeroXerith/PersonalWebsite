@@ -1,0 +1,174 @@
+<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Brlye Sanico - Web Developer.Game Developer.Computer Science Student</title>
+			<link rel="icon" type="image/png" href="assets/favicon.png"/>
+			<link href="css/style.css" rel="stylesheet" type="text/css">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script:wght@700&family=Prompt:wght@200&display=swap" rel="stylesheet">
+			<script src="js/avatar-script.js"></script>
+	
+
+
+
+	</head>
+
+		<body onkeydown="getKeyAndMove(event)" >
+		
+					<!-------------Menu Portals-------------->
+				<div id="about">
+					<img id="about"  src="assets/about.gif" height="70" width="94" alt="About-Menu" />
+				</div>
+				<div id="contact">
+					<img id="contact"  src="assets/contact.gif" height="75" width="100" alt="Contact-Menu" />
+				</div>
+				<div id="resume">
+					<img id="resume"  src="assets/resume.gif" height="70" width="94" alt="resume-Menu" />
+				</div>
+				<div id="gallery">
+					<img id="gallery"  src="assets/gallery.gif" height="70" width="94" alt="gallery-Menu" />
+				</div>
+				
+				<!-------------Torches-------------->
+				<div id="torch-green">
+					<img id="torch-green"  src="assets/torch-green.gif" height="150" width="80" alt="torch-green" />
+				</div>
+				<div id="torch-green2">
+					<img id="torch-green2"  src="assets/torch-green.gif" height="150" width="80" alt="torch-green2" />
+				</div>
+				
+				<div id="torch-green3">
+					<img id="torch-green3"  src="assets/torch-green.gif" height="150" width="80" alt="torch-green3" />
+				</div>
+				<div id="torch-green4">
+					<img id="torch-green4"  src="assets/torch-green.gif" height="150" width="80" alt="torch-green4" />
+				</div>
+				
+				<!-------------Teleporter Portals-------------->
+				<img id="avatar"  src="assets/male.png" alt="Avatar" />
+				<div id="teleporter">
+					<img id="portal"  src="assets/portal.gif" height="175" width="140" alt="Teleporter" />
+				</div>
+				<div id="teleporter2">
+					<img id="portal"  src="assets/portal.gif" height="180" width="150" alt="Teleporter" />
+				</div>
+				<div id="teleporter3">
+					<img id="portal"  src="assets/portal.gif" height="180" width="150" alt="Teleporter" />
+				</div>
+				<div id="teleporter4">
+					<img id="portal"  src="assets/portal-flip.gif" height="180" width="150" alt="Teleporter" />
+				</div>
+				
+			
+
+				<!-------------Toggle Modals-------------->
+					<button id="proButton" class="proButton" onclick="togglePopup()" hidden>PROCEED</button>
+			
+				<!---Popup function --->
+					<script>
+					
+					function togglePopup(){
+						document.getElementById("popup-1").classList.toggle("active");
+					}
+					function togglePopup2(){
+						document.getElementById("popup-2").classList.toggle("active");
+					}
+					function togglePopup3(){
+						document.getElementById("popup-3").classList.toggle("active");
+					}
+					
+					/** OnLoad toggle Modal 1**/
+					var interval = setTimeout(function() {
+					document.querySelector('.proButton').click(); });
+						</script> 
+						
+					<!---Key Limits--->
+						<script>$('html, body').keydown(function(event){
+							if(event.keyCode !== 37 || event.keyCode !== 38 || event.keyCode !== 39 || event.keyCode !== 40)
+									{
+										event.preventDefault();
+									}
+							});
+						</script>
+				<!-------------MODAL 1-------------->
+
+				<div class="popup" id="popup-1">
+					<div class="overlay"></div>
+					
+					<div class="content">
+							<div id="author"></div>
+								<br>
+								<h1 id="authorName">Bryle Sanico</h1> <br>
+								<hr id="welcomeHR" >
+								<p id="subtitle">Website & Game developer</p>
+					
+						<!--------button PROCEED------------>
+						<div onclick="togglePopup()">
+							<button id="nextButton" class="next-btn" onclick="togglePopup()" ></button>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton").onclick = function () 
+								{
+								document.getElementById("popup-2").classList.toggle("active");
+								};
+						</script>
+
+					</div>
+					
+				</div>
+				
+				
+				<!-------------MODAL 2-------------->
+
+				<div class="popup" id="popup-2">
+					<div class="overlay"></div>
+					
+					<div class="content2">
+							<h1 id="greetings-title">Greetings!</h1>	
+						<br><br><br><br><br><br>
+						<p id="greetings-paragraph">Explore and enjoy this simple interactive website I developed. This website is mainly run buy javascript and css language. It aims to provide some details of my personal life informations such as the date I was born, my family background, forte, and other stuffs that will allow you to get me know well!</p>
+				
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div onclick="togglePopup2()">
+							<button id="nextButton2" class="next-btn" onclick="togglePopup3()" ></button>
+						</div>
+							<script type="text/javascript">
+								document.getElementById("nextButton2").onclick = function () 
+								{
+								document.getElementById("popup-3").classList.toggle("active");
+								};
+						</script>
+					</div>
+				</div>
+				
+				<!-------------MODAL 3-------------->
+
+				<div class="popup" id="popup-3">
+					<div class="overlay"></div>
+					
+					<div class="content2">
+					
+					<h1 id="arrowkeys-title">Use arrow keys to move!</h1>
+					<img id="movement-demo" src="assets/arrowkeys.gif" height="150" width="200"/>
+					
+					<h1 id="avatar-title">Your Avatar!</h1>
+					<img id="avatar-demo" src="assets/male.png" height="250" width="250"/>
+				
+				<!----------------modal button PROCEED------------------->
+
+						<div class="done-btn" onclick="togglePopup3()">
+						<button id="done-btn" class="done-btn"></button>
+						</div>
+
+					</div>
+				</div>
+		
+		</body>	
+
+
+	</html>
